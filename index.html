@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>API-documentation</title>
+
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="libs/bootstrap-3.3.2-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
+  <script src="libs/Angular/angular.min.js"></script>
+
+  <script src="scripts/appAngularScript.js"></script>
+</head>
+<body>
+
+<div class="main" ng-controller="MainController">
+
+
+    <div class="container"> 
+      <nav  class="navbar navbar-default navbar-fixed-top col-md-12" >
+    
+        <div class="filters row col-md-12">
+
+          <div class="filter" >
+            <label>С:
+            <input type="date" ng-model="minDate" /></label>
+          </div>
+
+          <div class="filter" >
+            <label>До:
+            <input type="date" ng-model="maxDate" /></label>
+          </div>
+        </div>
+  
+        <div class="filters row col-md-12">
+          <div class="filter">
+            <label>Фильтрация по названию курса:</label><br />
+            <input ng-model="cn.name"  />
+          </div> 
+      
+          <div class="filter">
+            <label>Фильтрация по номеру класса:</label><br />
+            <input ng-model="classN.classNum" />
+          </div>
+
+          <div class="filter">
+            <label>Фильтрация по названию лекции:</label><br />
+            <input ng-model="lt.lectureTitle" />
+          </div>
+
+          <div class="filter">
+            <label>Фильтрация по имени лектора:</label><br />
+            <input ng-model="ln.lecturerName"/>
+          </div> 
+        </div>
+      </nav>
+
+      <div class="show-filters">
+        <i class="fa fa-chevron-down" aria-hidden="true"><br> Окно фильтров</i>
+      </div>
+    </div>
+
+  <div class="container">	
+	<table class="timetable col-md-12" ng-repeat="dataTimetable in timetableCourses | filter:cn">
+      <thead  class="timetable-header">
+		<th colspan="4">{{ dataTimetable.name }}
+      
+          <div class="update" ng-show="!showUpdateSch" ng-click="someNewName = dataTimetable.name; showUpdateSch = true">Изменить</div>
+          <div ng-show="showUpdateSch" >
+            <input style="width:250px;" type="text" ng-model="someNewName"> <input  type="button" value="Изменить" ng-click="updateName($index, someNewName); showUpdateSch = false;">
+          </div>
+        </th>
+        <tr>
+          <th>Дата</th>
+          <th>Номер класса</th>
+          <th>Название лекции</th>
+          <th>ФИО Лектора</th>
+        </tr>
+      </thead>
+
+      <tbody ng-repeat="data in dataTimetable.coursesData | filter:d | filter: m | filter: classN | filter: lt | filter: ln | filter: filterMinDate | filter: filterMaxDate | orderBy:'date'">
+
+		<tr>
+          <td >{{ data.date | date : 'dd/MMM HH:mm' }}
+            <div class="update" ng-show="!showUpdateDate" ng-click="someNewDate = data.date; showUpdateDate = true">Изменить</div>
+            <div class="formNewValue" ng-show="showUpdateDate" >
+            <div>
+              <input class="check" type="datetime-local" value="someNewDate" ng-model="someNewDate">
+              <br>
+              <input class="check" type="checkbox" ng-model="joinLecture" value="false" >Совместная лекция
+              <br>
+              <input class="check" type="button" value="Изменить" ng-click="updateValue($parent.$index, $index, someNewDate, joinLecture); showUpdateDate = false; joinLecture = false;">
+              <input class="check" type="button" value="Закрыть" ng-click="showUpdateDate = false;">
+            </div>
+            </div>
+          </td>
+
+          <td > {{ data.classNum }}
+            <div class="update" ng-show="!showUpdateClassN" ng-click="someNewName = data.classNum; showUpdateClassN = true">Изменить</div>
+            <div class="formNewValue" ng-show="showUpdateClassN">
+              <input class="check" type="text" ng-model="someNewName">
+              <br>
+              <input class="check" type="checkbox" ng-model="joinLecture" value="false">Совместная лекция
+              <br>
+              <input class="check" type="button" value="Изменить" ng-click="updateValue($parent.$index, $index, someNewName, joinLecture); showUpdateClassN = false;">
+              <input class="check" type="button" value="Закрыть" ng-click="showUpdateClassN = false;">
+            </div>
+          </td>
+
+          <td >{{ data.lectureTitle }}
+            <div class="update" ng-show="!showUpdateLectureTitle" ng-click="someNewLectureTitle = data.lectureTitle; showUpdateLectureTitle = true">Изменить</div>
+            <div class="formNewValue" ng-show="showUpdateLectureTitle" >
+              <input class="check" style="width:250px;" type="text" ng-model="someNewLectureTitle">
+              <br>
+              <input class="check" type="button" value="Изменить" ng-click="updateLectureTitle($parent.$index, $index, someNewLectureTitle); showUpdateLectureTitle = false;">
+              <input class="check" type="button" value="Закрыть" ng-click="showUpdateLectureTitle = false;">
+            </div>
+          </td>
+
+		  <td >{{ data.lecturerName }}
+            <div class="update" ng-show="!showUpdateLecturerName" ng-click="someNewLecturerName = data.lecturerName; showUpdateLecturerName = true">Изменить</div>
+            <div class="formNewValue" ng-show="showUpdateLecturerName" >
+              <input class="check" style="width:250px;" type="text" ng-model="someNewLecturerName">
+              <br>
+              <input class="check" type="checkbox" ng-model="joinLecture" value="false">Совместная лекция
+              <br>
+              <input  class="check" type="button" value="Изменить" ng-click="updateLecturerName($parent.$index, $index, someNewLecturerName, joinLecture); showUpdateLecturerName = false;">
+              <input class="check" type="button" value="Закрыть" ng-click="showUpdateLecturerName = false;">
+            </div>
+          </td>
+		</tr>
+      </tbody>
+	</table>
+  </div>  
+</div>
+
+
+<script src="libs/jquery/jquery-3.2.0.min.js"></script>
+<script src="scripts/app.js"></script>
+
+  
+</body>
+</html>
+
+
+
+
+

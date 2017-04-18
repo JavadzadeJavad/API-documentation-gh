@@ -1,0 +1,248 @@
+
+[{	"name": "Школа разработки интерфейсов ",
+
+  "numberPersons": 26,
+
+  "coursesData":[
+    {
+      "date": 1476979200000,
+      "classNum": "Рыжий Кот",
+      "lectureTitle": "Адаптивная вёрстка",
+      "lecturerName": "Дмитрий Душкин"
+    },
+    {
+      "date": 1477591200000,
+      "classNum": "Синий Кит" ,
+      "lectureTitle": "Работа с сенсорным пользовательским вводом " ,
+      "lecturerName": "Дмитрий Душкин"
+    },
+    {
+      "date": 1478199600000,
+      "classNum":  "Рыжий Кот" ,
+      "lectureTitle": "Мультимедиа: возможности браузера "  ,
+      "lecturerName": "Максим Васильев"
+    },
+    {
+      "date": 1478797200000,
+      "classNum":  "Рыжий Кот" ,
+      "lectureTitle": "Нативные приложения на веб-технологиях  "  ,
+      "lecturerName": "Сергей Бережной"
+    },
+    {
+      "date": 1480008600000,
+      "classNum":  "Синий Кит",
+      "lectureTitle": "Клиентская оптимизация: базовые знания и лучшие практики   "  ,
+      "lecturerName": "Андрей Морозов"
+    },
+    {
+      "date": 1480014000000,
+      "classNum":  "Синий Кит" ,
+      "lectureTitle": "Клиентская оптимизация: мобильные устройства и инструменты "  ,
+      "lecturerName": "Иван Карев"
+    },
+    {
+      "date": 1480613400000,
+      "classNum":  "Рыжий Кот" ,
+      "lectureTitle": "Инфраструктура веб-проектов"  ,
+      "lecturerName": "Прокопюк Андрей"
+    },
+    {
+      "date": 1480618800000,
+      "classNum":  "Рыжий Кот" ,
+      "lectureTitle": "Инструменты разработки мобильного фронтенда "  ,
+      "lecturerName": "Прокопюк Андрей"
+    }
+  ]
+},
+
+  {
+    "name":"Школа мобильной разработки",
+    "numberPersons": 22,
+    "coursesData":[
+      {
+        "date": 1476892800000,
+        "classNum": "Хрустальный Гусь",
+        "lectureTitle": "Git & Workflow ",
+        "lecturerName": "Дмитрий Складнов"
+      },
+      {
+        "date": 1476993600000,
+        "classNum": "Белая Ворона",
+        "lectureTitle": "Java Blitz. Часть 1.",
+        "lecturerName": "Эдуард Мацуков"
+      },
+
+      {
+        "date": 1477414800000,
+        "classNum": "Синий Кит",
+        "lectureTitle": "Java Blitz. Часть 2. ",
+        "lecturerName": "Эдуард Мацуков"
+      },
+      {
+        "date": 1477420200000,
+        "classNum": "Белая Ворона",
+        "lectureTitle": "MyFirstApp. Часть 1. ",
+        "lecturerName": "Роман Григорьев"
+      },
+      {
+        "date": 1478111400000,
+        "classNum": "Рыжий Кот",
+        "lectureTitle": "MyFirstApp. Часть 2. ",
+        "lecturerName": "Роман Григорьев"
+      },
+      {
+        "date": 1478116800000,
+        "classNum": "Хрустальный Гусь",
+        "lectureTitle": "ViewGroup ",
+        "lecturerName": "Алексей Щербинин"
+      },
+      {
+        "date": 1478718000000,
+        "classNum": "Хрустальный Гусь",
+        "lectureTitle": "Background ",
+        "lecturerName": "Алексей Макаров"
+      },
+      {
+        "date": 1478723400000,
+        "classNum": "Синий Кит",
+        "lectureTitle": "RecyclerView  ",
+        "lecturerName": "Владимир Тагаков"
+      },
+      {
+        "date": 1479312000000,
+        "classNum": "Синий Кит",
+        "lectureTitle": "Service & Broadcasts  ",
+        "lecturerName": "Алексей Макаров"
+      },
+      {
+        "date": 1479321000000,
+        "classNum": "Белая Ворона",
+        "lectureTitle": "Drawing ",
+        "lecturerName": "Алексей Щербинин"
+      },
+      {
+        "date": 1479931200000,
+        "classNum": "Рыжий Кот",
+        "lectureTitle": "Content provider ",
+        "lecturerName": "Максим Хромцов"
+      },
+      {
+        "date": 1479936600000,
+        "classNum": "Хрустальный Гусь",
+        "lectureTitle": "SQL&SQLite",
+        "lecturerName": "Максим Хромцов"
+      },
+      {
+        "date": 1480531500000,
+        "classNum": "Хрустальный Гусь",
+        "lectureTitle": "Fragments. Часть 1. ",
+        "lecturerName": "Денис Загаевский"
+      },
+      {
+        "date": 1480536900000,
+        "classNum": "Белая Ворона",
+        "lectureTitle": "Fragments. Часть 2. ",
+        "lecturerName": "Денис Загаевский"
+      },
+      {
+        "date": 1481137200000,
+        "classNum": "Синий Кит",
+        "lectureTitle": "MVP&Co ",
+        "lecturerName": "Дмитрий Попов"
+      },
+      {
+        "date": 1481745600000,
+        "classNum": "Рыжий Кот",
+        "lectureTitle": "Debugging & Polishing ",
+        "lecturerName": "Илья Сергеев"
+      }]
+
+  },
+
+  {
+    "name":"Школа мобильного дизайна",
+    "numberPersons": 17,
+    "coursesData":[
+      {
+        "date": 1476815400000,
+        "classNum": "Рыжий Кот",
+        "lectureTitle": "Идея, исследование, концепт. Часть 1. ",
+        "lecturerName": "Антон Тен"
+      },
+      {
+        "date": 1476820800000,
+        "classNum": "Белая Ворона",
+        "lectureTitle": "Идея, исследование, концепт. Часть 2. ",
+        "lecturerName": "Антон Тен"
+      },
+      {
+        "date": 1477432800000,
+        "classNum": "Рыжий Кот",
+        "lectureTitle": "Особенности проектирования мобильных интерфейсов ",
+        "lecturerName": "Васюнин Николай"
+      },
+      {
+        "date": 1478026800000,
+        "classNum": "Хрустальный Гусь",
+        "lectureTitle": "Продукт и платформа ",
+        "lecturerName": "Сергей Калабин"
+      },
+      {
+        "date": 1478032200000,
+        "classNum": "Синий Кит",
+        "lectureTitle": "Природа операционных систем ",
+        "lecturerName": "Васюнин Николай"
+      },
+      {
+        "date": 1478620800000,
+        "classNum": "Рыжий Кот",
+        "lectureTitle": "Прототипирование как процесс ",
+        "lecturerName": "Сергей Томилов, Дарья Старицына"
+      },
+      {
+        "date": 1478626200000,
+        "classNum": "Хрустальный Гусь",
+        "lectureTitle": "Инструмент под задачи ",
+        "lecturerName": "Сергей Томилов, Дарья Старицына"
+      },
+      {
+        "date": 1479240900000,
+        "classNum": "Черный Муравей",
+        "lectureTitle": "Анимации ",
+        "lecturerName": "Сергей Томилов, Дарья Старицына"
+      },
+      {
+        "date": 1479246300000,
+        "classNum": "Хрустальный Гусь",
+        "lectureTitle": "Дополнительная лекция. Design Everything  ",
+        "lecturerName": "Rijshouwer Krijn, Treub Jonas"
+      },
+      {
+        "date": 1479852000000,
+        "classNum": "Белая Ворона",
+        "lectureTitle": "Развите продукта  ",
+        "lecturerName": "Андрей Гевак"
+      },
+      {
+        "date": 1480455000000,
+        "classNum": "Черный Муравей",
+        "lectureTitle": "Исследование интерфейсов  ",
+        "lecturerName": "Кондратьев Александр"
+      },
+      {
+        "date": 1481065200000,
+        "classNum": "Черный Муравей",
+        "lectureTitle": "Работа в команде ",
+        "lecturerName": "Юрий Подорожный"
+      },
+      {
+        "date": 1481655600000,
+        "classNum": "Синий Кит",
+        "lectureTitle": "Дополнительная лекция. Айдентика ",
+        "lecturerName": "Дмитрий Моруз, Ждан Филиппов"
+      }
+    ]
+  }
+
+]
+         

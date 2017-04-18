@@ -1,0 +1,94 @@
+table{
+	border-spacing: 7px 11px;
+	border-top:1px solid black;
+}
+th{
+	background-color: #cbced3;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+tbody {
+	padding: 10px;
+}
+tbody tr td{
+	padding: 3px;
+	border:1px solid black;
+	padding-right: 10px;
+	margin-right: 10px;
+}
+form input{
+	display: block;
+	margin-top:10px;
+}
+.navbar{
+	display: none;
+}
+.filters {
+	text-align: center;
+}
+.filter{
+	display: inline-block;
+	padding-top: 15px;
+	margin:0px 5px 0px 5px;
+	margin-bottom: 10px;
+}
+.timetable{
+	display: block;
+	padding-top: 200px;
+	padding-bottom: 50px;
+}
+.timetable-header tr th{
+	text-align:center; 
+	padding-top:10px; 
+	border:1px solid black;
+	width: 100vw;
+}
+.update{
+	display: block;
+	padding-right: 15px;
+	color:#3163b2;
+}
+.update:hover{
+	color:red;
+	text-decoration: underline;
+	cursor:pointer;
+}
+.dateInterval{
+	display: inline-block;
+}
+.check{
+	margin:10px;
+	border:1px solid #c1c4c9;
+	border-radius: 30px;
+	padding: 5px;
+}
+.formNewValue{
+	text-align: center;
+}
+.show-filters{
+	padding: 5px;
+	cursor: pointer;
+	z-index: 10000000;
+	border: 1px solid black;
+	margin-left: -145px;
+	position: absolute;
+	position: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
